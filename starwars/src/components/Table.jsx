@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import starContext from '../context/StarContext';
 
+
 function Table() {
   const { filteredPlanets } = useContext(starContext); // recebe os dados do provider
 
   return (
-    <div>
+    <div className='table'>
       <table
         data-testid="table"
       >
